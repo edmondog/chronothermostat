@@ -1,0 +1,10 @@
+The board controls the temperature of the room reading a tmp102 and switching a fan.
+A second tmp102 controls the temperature of the heating part to avoid turning on the fan if no heat is available.
+The display normally shows the room temperature.
+The setpoint value is shown when pushing the button.
+To avoid unwanted setpoint changing, the modification of the setpoint is subjected to password control.
+The password is inserted as a number that has to be dialed using the encoder knob.
+The password is fixed in code (33); once dialed the setpoint is shown and can be modified turning the encoder.
+Under password 22 the temperature of the heater is shown
+Under password 44 the 485 board ID is shown and made editable
+A minimal communication protocol is made available to allow remote monitoring and control by a remote pc, actually a Raspberry pi.
